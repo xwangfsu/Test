@@ -20,7 +20,6 @@ int main2(){
 		a = j + 2;
 		printf("Thread %d has a value of a = %d for j = %d\n", omp_get_thread_num(), a, j);
 	}
-	printf("value of a after parallel = %d\n", a);
 }
 
 int main()
