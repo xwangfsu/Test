@@ -5,7 +5,7 @@
 
 int main1(){
 	int tmp = 0;
-	#pragma omp parallel for firstprivate(tmp) lastprivate(tmp)
+	#pragma omp parallel for //deleted by xwang
 	for (int j=0; j<5;j++)
 		tmp += j;
 	printf("%d\n", tmp);
